@@ -121,6 +121,8 @@ main {
   width: calc(100% - 360px);
 }
 
+main img { width: 99%; }
+
 aside {
   width: 360px;
   margin-top: 60px;
