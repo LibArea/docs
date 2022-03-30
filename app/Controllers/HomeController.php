@@ -2,13 +2,14 @@
 
 namespace App\Controllers;
 
+use Hleb\Scheme\App\Controllers\MainController;
 use Translate;
 
-class HomeController extends \MainController
+class HomeController extends MainController
 {
     public function index()
     {
-         return view(
+        return view(
             '/index',
             [
                 'title' => Translate::get('index.title'),
@@ -18,6 +19,4 @@ class HomeController extends \MainController
             ],
         );
     }
- 
 }
-

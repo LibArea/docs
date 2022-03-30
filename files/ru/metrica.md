@@ -2,7 +2,7 @@
 
 Сайт LibArea использует технологию *Content Security Policy*. Чтобы добавить счетчик выполните следующие действия...
 
-В дириктории: `/views/default/` вашего шаблона создайте файл: `metrica.php`, а в диритории: `/assets/js/` файл `metrica.js`.
+В дириктории: `/views/default/` вашего шаблона создайте файл: `metrica.php`.
 
 В подвал (`footer.php` шаблона) вашего сайте подключите файл `metrica.php` следующим образом:
 
@@ -10,34 +10,26 @@
 <?= Tpl::import('/metrica'); ?>
 ```
 
-В файле `metriсa.php` необходимо разместить код:
+В файле `metriсa.php` необходимо разместить код, в данном случае код Яндекс.Счетчика:
 
 ```php
-<script src="/assets/js/metrica.js"></script>
-<noscript><div>
+<noscript>
+<script nonce="<?= $_SERVER['nonce']; ?>">
+  (function(m,e,t,r,i,k,a){m[i] и т.д.
+</script>
+<noscript>
 <img src="https://mc.yandex.ru/watch/XXXXXX" class="yandex" /></div>
 </noscript>
 ```
 
-Заменив XXXXXX на номер своего счетчика.
+Обратите внимание, что мы добавляем к `script` конструкцию:  
 
-А в файл `metrica.js` добавить:
-
-```javascript
-(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-m[i].l=1*new Date();
-k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,
-k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(XXXXXXXX, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-});
+```php
+nonce="<?= $_SERVER['nonce']; ?>"
 ```
 
-Где за XXXXXXXX номер вашего счетчика в системе Яндекс.Метрика.
+Проверьте корректность вашего подключения.
+
 
 См. более подробно: [ЯндексСправка, Установка счетчика на сайт с CSP](https://yandex.ru/support/metrica/code/install-counter-csp.html)
 
