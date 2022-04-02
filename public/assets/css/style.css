@@ -204,6 +204,15 @@ blockquote {
   justify-content: center;
 }
 
+.external-url:after {
+  content: "🔗";
+  font-family: bootstrap-icons;
+  color: #eee;
+  vertical-align: middle;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
 @media (max-width: 890px) {
   aside { display: none; }
   main { width: 100%; }
