@@ -121,7 +121,7 @@ main {
   width: calc(100% - 360px);
 }
 
-main img { width: 99%; }
+main img { max-width: 99%; }
 
 aside {
   width: 360px;
@@ -211,6 +211,14 @@ blockquote {
   vertical-align: middle;
   font-size: 13px;
   margin-left: 3px;
+}
+
+code {
+  color: #9b4f5e;
+  background-color: #f5f2f0;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
 @media (max-width: 890px) {

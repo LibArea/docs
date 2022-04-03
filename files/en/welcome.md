@@ -12,4 +12,9 @@ A demo is available on the Agouti website (in Russian):  https://libarea.ru
 
 GitHub: https://github.com/LibArea
 
+**Some documentation:**
+
+* [Directory Structure](./structure)
+
+
 *Documentation under development ...*
