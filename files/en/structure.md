@@ -16,6 +16,8 @@ The `config` directory, as the name implies, contains all of your application's 
 
 The `public` directory contains the `index.php` file, which is the entry point for all requests entering your application and configures autoloading. This directory also houses your assets such as images, JavaScript, and CSS.
 
+Settings: [Configuring a Web Server](/en/web-server-configuration)
+
 ### The Resources Directory
 
 The `resources` directory contains your site templates as well as raw, uncompiled assets like LESS, SASS. 

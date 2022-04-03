@@ -131,6 +131,8 @@ server {
 </VirtualHost> 
 ```
 
+См. [Почему index.php находится в папке public, а не в общей папке?](https://libarea.ru/post/737/pocemu-indexphp-nahoditsya-v-papke-public-a-ne-v-obshchey-papke)
+
 Возможно, это было полезно...
 
 —> [**Перейти на главную страницу**](/ru/)
