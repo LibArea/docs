@@ -15,6 +15,8 @@ http://libarea.ru
 
 * [Структура каталогов](./structure)
 
+* [Настройка веб-сервера](./web-server-configuration)
+
 * [Как добавить код счетчика Яндекс.Метрики?](./metrica)
 
 На GitHub: https://github.com/LibArea

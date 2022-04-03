@@ -16,5 +16,6 @@ GitHub: https://github.com/LibArea
 
 * [Directory Structure](./structure)
 
+* [Configuring a Web Server](./web-server-configuration)
 
 *Documentation under development ...*

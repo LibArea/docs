@@ -178,7 +178,7 @@ error_reporting(E_ALL);
  | Изначально: "/^[a-z0-9а-яё\_\-\/\.\@]+$/u"
  |
  */
-define( 'HLEB_PROJECT_VALIDITY_URL', "/^[a-z0-9а-яё\_\-\/\.\@]+$/u" );
+define( 'HLEB_PROJECT_VALIDITY_URL', "/^[a-z0-9\_\-\/\.\@]+$/u" );
 
 
 

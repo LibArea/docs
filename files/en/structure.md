@@ -8,7 +8,6 @@
 
 The `app` directory contains the core code of your application. We'll explore this directory in more detail soon; however, almost all of the classes in your application will be in this directory.
 
-
 ### The Config Directory
 
 The `config` directory, as the name implies, contains all of your application's configuration files. It's a great idea to read through all of these files and familiarize yourself with all of the options available to you.
@@ -17,15 +16,13 @@ The `config` directory, as the name implies, contains all of your application's 
 
 The `public` directory contains the `index.php` file, which is the entry point for all requests entering your application and configures autoloading. This directory also houses your assets such as images, JavaScript, and CSS.
 
-
-### Каталог (resources)
+### The Resources Directory
 
 The `resources` directory contains your site templates as well as raw, uncompiled assets like LESS, SASS. 
 
 ### The Routes Directory
 
 The `routes` directory contains all of the route definitions for your application. By default, several route files are included with LibArea: `main.php`, `admin.php` and `radjax.php`.
-
 
 ### The Storage Directory
 
