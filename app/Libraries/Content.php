@@ -16,7 +16,7 @@ class Content
     // Parsedown
     public static function parser($content, $type)
     {
-        $Parsedown = new \MyParsedown();
+        $Parsedown = new Parsedown();
         $Parsedown->setSafeMode(true);
 
         if ($type  == 'text') {

@@ -7,7 +7,7 @@
 // Все вызовы направляются в этот файл.
 
 define('HLEB_START', microtime(true));
-define('HLEB_FRAME_VERSION', "1.6.4");
+define('HLEB_FRAME_VERSION', "1.6.63");
 define('HLEB_PUBLIC_DIR', __DIR__);
 define('HLEB_DIR', __DIR__ . '/../');
 
@@ -23,8 +23,7 @@ header("X-Frame-Options: SAMEORIGIN");
 // Initialization.
 // Инициализация.
 
-define('HLEB_VENDOR_DIR_NAME', '/app/ThirdParty/');
-require __DIR__ . '/../app/ThirdParty/phphleb/framework/bootstrap.php';
+require __DIR__ . '/../vendor/phphleb/framework/bootstrap.php';
 
 exit();
 
