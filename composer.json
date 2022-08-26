@@ -34,7 +34,10 @@
       "App\\": "app/",
       "Phphleb\\": "vendor/phphleb/",
       "Hleb\\": "vendor/phphleb/framework/"
-    }
+    },
+    "files": [
+        "app/helpers.php"
+    ]
   },
   "config": {
     "optimize-autoloader": true

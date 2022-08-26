@@ -4,18 +4,19 @@ namespace App\Controllers;
 
 use Hleb\Scheme\App\Controllers\MainController;
 use Hleb\Constructor\Handlers\Request;
-use Data, Content;
+use Content, Translate;
 
 class ArticleController extends MainController
 {
     public function index($slug)
     {
-        if (!in_array($lang = Request::get('lang'), Data::LANG)) {
+        if (!in_array($lang = Request::get('lang'), config('general.lang'))) {
             redirect('/');
         }
 
-        Data::lang($lang);
-
+        $lang = $lang ?? config('general.default_lang');
+        Translate::setLang($lang);
+        
         if (!$file = 'files/' . $lang . '/' . $slug . '.md') {
             return false;
         }

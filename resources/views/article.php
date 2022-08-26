@@ -2,15 +2,15 @@
 
 <div id="contentWrapper" class="wrap">
   <main>
-    <?= $data['contents']; ?>
-  </main>
-  <?php if ($data['headings']) { ?>
-    <?php if ($data['headings']) { ?>
+    <?= $data['contents']; ?> 
+  </main>  
+  <?php if($data['headings']) { ?> 
+    <?php if($data['headings']) { ?> 
       <aside>
-        <?= $data['headings']; ?>
+        <?= $data['headings']; ?> 
       </aside>
-    <?php } ?>
-  <?php } ?>
-</div>
+    <?php } ?> 
+  <?php } ?>   
+</div>  
 
 <?= includeTemplate('footer'); ?>
