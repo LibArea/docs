@@ -97,7 +97,6 @@ img {
 header {
   background: #28a5f5;
   color: #fff;
-  margin-bottom: 20px;
 }
 
 .logo {max-width: 200px;}
@@ -121,7 +120,9 @@ main {
   width: calc(100% - 360px);
 }
 
+.w-100 { width: 100%; }
 main img { max-width: 99%; }
+.home-img { max-width: 780px; }
 
 aside {
   width: 360px;
@@ -199,7 +200,7 @@ blockquote {
   display: flex;
   gap: 2rem;
   display: flex;
-  padding: 0 50px 50px 50px;
+  padding: 0 50px 40px 50px;
   align-items: center;
   justify-content: center;
 }
@@ -224,6 +225,7 @@ code {
 @media (max-width: 890px) {
   aside { display: none; }
   main { width: 100%; }
+  .logo {max-width: 100px;}
 
   .text-max-w500 {
     margin: 0 auto;
